@@ -2,13 +2,13 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: f74f7dc1-2f53-4bf4-bc60-00a198784e0a
-name: Drupal
-mail: ''
+name: 'Blog Site'
+mail: sandip.poddar@innoraft.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /blogs
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

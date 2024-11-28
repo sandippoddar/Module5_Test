@@ -1,0 +1,21 @@
+uuid: 200dd875-8b99-4898-bcbc-fb4f14103418
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_design
+    - node.type.blog
+  module:
+    - options
+id: node.blog.field_design
+field_name: field_design
+entity_type: node
+bundle: blog
+label: Design
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

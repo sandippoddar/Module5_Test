@@ -1,0 +1,154 @@
+@use '../partial/importer' as *;
+
+.view-blogs {
+  .view-content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ddd;
+    padding: 20px;
+    .views-row {
+      width: calc(25% - 10px);
+      margin-bottom: 10px;
+      .views-field {
+        .field-content {
+          .card {
+            height: 360px;
+          }
+          .design1 {
+            padding: 15px;
+            position: relative;
+            &:before {
+              content: '';
+              position: relative;
+              top: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 60px;
+              border: 6px solid #ddd;
+              border-radius: 30px;
+            }
+            &__upper {
+              position: relative;
+              height: 80%;
+              &--overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 100%;
+                background-color: red;
+                opacity: 0.5;
+                p {
+                  position: absolute;
+                  padding: 5px;
+                  bottom: 0;
+                  color: #fff;
+                }
+              }
+            }
+            &__body {
+              height: 20%;
+              h2 {
+                text-transform: uppercase;
+                font-size: 1.6rem;
+                letter-spacing: 3px;
+              }
+            }
+            &__image {
+              padding-bottom: 45px;
+            }
+            
+          }
+
+          .design2 {
+            position: relative;
+            &__upperBackground {
+              height: 50%;
+              background-color: #ff00a9;
+            }
+            &__lowerBackground {
+              height: 50%;
+              background-color: grey;
+            }
+            &__body {
+              p {
+                font-family: $light-font;
+              }
+            }
+            &__content {
+              background-color: #fff;
+              position: absolute;
+              width: 70%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              border-radius: 20px;
+              padding: 10px;
+              text-align: center;
+              &:before {
+                content: '';
+                position: relative;
+                top: 0;
+                
+                width: 60px;
+                border: 6px solid #ddd;
+                border-radius: 30px;
+              }
+              &:after {
+                content: '';
+                position: relative;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #ddd;
+              }
+            }
+            &__image {
+              height: 110px;
+              width: 110px;
+              img {
+                border-radius: 50%;
+              }
+            }
+          }
+
+          .design3 {
+            &__upper {
+              height: 85%;
+              position: relative;
+              &--body {
+                position: absolute;
+                width: 80%;
+                top: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                &:after {
+                  content: '';
+                  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  width: 40px;
+                  border-top: 4px solid white;
+                }
+                p {
+                  text-align: center;
+                  color: white;
+                  font-family: $light-font;
+                }
+              }
+            }
+
+            &__lower {
+              height: 15%;
+              padding: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

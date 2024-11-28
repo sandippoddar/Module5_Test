@@ -1,0 +1,39 @@
+@use './mixin' as base;
+
+@include base.media(768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .view-blogs {
+    .view-content {
+      .views-row {
+        width: calc(50% - 10px);
+      }
+    }
+  }
+
+}
+
+@include base.media(576px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  .view-blogs {
+    .view-content {
+      .views-row {
+        width: 100%;
+        .views-field {
+          .field-content {
+            .card {
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
