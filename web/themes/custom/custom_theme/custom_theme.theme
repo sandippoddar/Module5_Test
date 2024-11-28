@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Provides functionality to add theme suggestions and pass variables.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function custom_theme_preprocess_views_view__blogs__page_1(&$variables) {
+  $variables['#attached']['library'][] = 'custom_theme/blog';
+}
